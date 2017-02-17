@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PureCloudAgent.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="vmFaxInterval" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="CustomerService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">customerservice@YOURDOMAIN.com</Value>
+    </Setting>
+    <Setting Name="Accounting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">accounting@YOURDOMAIN.com</Value>
+    </Setting>
+    <Setting Name="n13175555555" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">customerservice@YOURDOMAIN.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
