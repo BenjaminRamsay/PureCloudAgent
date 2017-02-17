@@ -152,7 +152,7 @@ namespace PureCloudAgent
 
                 Log("VM from " + vm.CallerAddress + " at " + vmDate);
 
-                // Check for Group attribute so we know where to send it (default to IT if nothing found)                    
+                // Check for Group attribute so we know where to send it (use default if nothing found)                    
                 string group = "unknown";
                 string groupEmail = DefaultRecipientEmail;
                 var call = convApi.GetCallsCallId(vm.Conversation.Id);
