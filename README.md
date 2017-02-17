@@ -26,6 +26,6 @@ Once those things are done you should be able to build and run.
 
 ### General Notes
 * By default it checks for new voicemails/faxes every 60 seconds. This can be changed in Settings.
-* The embedded browser control that actual does the logging in is hidden down below the borders of the form. If you want to see it in action, maximize the form.
+* The embedded browser control that actually does the logging in is hidden down below the borders of the form. If you want to see it in action, maximize the form.
 * The automatic log in script doesn't work if the form is minimized, so the program will automatically restore itself before trying to authenticate.
 * Every once in a great while, the hacky bit of javascript that automates the user login will start failing for reasons unknown. When this happens restarting the program or using the buttons at the top to Log Out and re-Authenticate will get it back on track.
