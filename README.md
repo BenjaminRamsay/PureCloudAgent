@@ -8,7 +8,7 @@ To use this project as is, you'll need to pre-configure some things in PureCloud
 * In your Architect flows, anywhere that you are sending a call to voicemail first use "Set Participant Data" to assign an Attribute called "Group" to the call. The Value of the attribute should be the name of the group which you will use to identify it in the PureCloudAgent settings later.
 * If you need to handle group faxes, make sure to assign the fax # DID to your dummy user.
 * In Admin > Integrations > OAuth add an an OAuth client application called PureCloudAgent
-  * Token Duration = 86400
+  * Token Duration = 172800
   * Grant Type = Token Implicit Grant (Browser)
   * Authorized redirect URI = http://localhost:8085/oauth2/callback _(this is an arbitrary, fake URI. feel free to change it here and in code if desired)_
 
