@@ -6,6 +6,7 @@ using System.IO;
 using System.Net;
 using ININ.PureCloudApi.Api;
 using ININ.PureCloudApi.Model;
+using System.Threading.Tasks;
 
 
 namespace PureCloudAgent
@@ -115,7 +116,7 @@ namespace PureCloudAgent
             }
         }
 
-        private void CheckVoicemailAndFax()
+        private async void CheckVoicemailAndFax()
         {
             vmFaxCountdown = Properties.Settings.Default.vmFaxInterval;
 
@@ -130,6 +131,9 @@ namespace PureCloudAgent
                 if (ex.ErrorCode == 401)
                 {
                     Log("Need to authenticate first. Try again in a few seconds.");
+                    
+                    Logout();
+                    await Delay(7000);
                     Authenticate();
                 }
                 else
@@ -338,6 +342,11 @@ namespace PureCloudAgent
         private void logoutButton_Click(object sender, EventArgs e)
         {
             Logout();
+        }
+        
+        async Task Delay(int millisecondsDelay)
+        {
+            await Task.Delay(millisecondsDelay);
         }
 
         private void authenticateButton_Click(object sender, EventArgs e)
